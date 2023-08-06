@@ -6,17 +6,22 @@
 # Install and use globally
 GLOBALS_USED=(
 	node@lts
+	lua@latest
+	luaJIT@latest
 	python@latest
 	go@latest
-	java@17
+	rust@stable
+	java@lts
 	spring-boot@latest
-	sqlite@3.42
-	mysql@8
+	sqlite@latest
+	mysql@latest
 )
 
 # Install only
 ENSURE_INSTALLED=(
 	java@adoptopenjdk-8
+	java@17
+	java@latest
 )
 
 # Check that `rtx` is installed
