@@ -38,8 +38,9 @@ enable_service "udevd"
 disable_service "dhcpcd" "wpa_supplicant" "wicd"
 enable_service "NetworkManager"
 
-# acpid
-enable_service "acpid"
+# Elogind
+disable_service "acpid"
+enable_service "elogind"
 
 # Alsa
 enable_service "alsa"
@@ -54,3 +55,8 @@ enable_service "cupsd"
 
 # Docker
 enable_service "containerd" "docker"
+
+# Clean up
+
+unset -v ok
+unset -f enable_service disable_service

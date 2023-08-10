@@ -12,6 +12,8 @@ GLOBALS_USED=(
 	go@latest
 	rust@stable
 	java@lts
+	maven@latest
+	gradle@latest
 	spring-boot@latest
 	sqlite@latest
 	mysql@latest
@@ -20,6 +22,7 @@ GLOBALS_USED=(
 # Install only
 ENSURE_INSTALLED=(
 	java@adoptopenjdk-8
+	java@11
 	java@17
 	java@latest
 )

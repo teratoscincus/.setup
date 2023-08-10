@@ -3,7 +3,6 @@ Thunar
 alacritty
 alsa-plugins-pulseaudio
 alsa-utils
-apache-maven
 apulse
 base-devel
 base-system
@@ -15,7 +14,6 @@ bluez
 bluez-alsa
 brightnessctl
 bzip2-devel
-cargo
 cups
 cups-pdf
 cups-pk-helper
@@ -24,6 +22,7 @@ delta
 discord
 dmenu
 docker
+elogind
 feh
 firefox
 font-awesome6
@@ -32,12 +31,12 @@ gimp
 glow
 google-chrome
 gpick
-gradle
 grub-x86_64-efi
 gutenprint
 gvfs
 htop
 intellij-idea-community-edition
+jq
 libdrm-32bit
 libffi-devel
 libgcc-32bit
@@ -46,8 +45,6 @@ liblzma-devel
 libreoffice-writer
 libstdc++-32bit
 linux-firmware
-lua-devel
-luarocks
 mesa-dri
 mesa-dri-32bit
 mesa-vulkan-radeon
