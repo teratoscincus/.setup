@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Runtime executor
 # https://github.com/jdxcode/rtx

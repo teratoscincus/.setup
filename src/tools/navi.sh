@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Command line cheatsheet
 # https://github.com/denisidoro/navi
