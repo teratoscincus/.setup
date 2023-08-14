@@ -25,6 +25,8 @@ docker
 elogind
 feh
 firefox
+firejail
+flatpak
 font-awesome6
 fzf
 gimp
