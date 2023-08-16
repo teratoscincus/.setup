@@ -13,7 +13,9 @@ fi
 wrapper="$HOME"/.local/bin/xdg-ninja
 
 cat >"$wrapper" <<EOM
-bash $repo_dest/xdg-ninja.sh  --skip-unsupported
+#!/usr/bin/env bash
+
+bash $repo_dest/xdg-ninja.sh --skip-unsupported
 EOM
 
 chmod +x "$wrapper"
