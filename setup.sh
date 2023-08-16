@@ -55,7 +55,7 @@ install_os_packages() {
         ;;
     *)
         warn 'OS support not implemented'
-        exit
+        exit 1
         ;;
     esac
 
@@ -70,7 +70,7 @@ install_os_packages() {
     else
         warn 'Missing list of packages'
         echo "  Couldn't locate $PACKAGE_LIST"
-        exit
+        exit 1
     fi
 
     # Set up services
@@ -78,7 +78,7 @@ install_os_packages() {
         source ./src/services/"$INIT"/services.sh
     else
         warn 'Unable to setup services'
-        exit
+        exit 1
     fi
 }
 [[ "$1" != '--skip-os' ]] && install_os_packages

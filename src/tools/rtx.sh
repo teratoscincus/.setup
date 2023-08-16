@@ -30,7 +30,7 @@ ENSURE_INSTALLED=(
 # Check that `rtx` is installed
 if ! command -v rtx &>/dev/null; then
     echo "'rtx' could not be found"
-    exit
+    exit 1
 fi
 
 # Install from above lists
