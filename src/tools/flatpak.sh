@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if ! command -v rtx &>/dev/null; then
+if ! command -v flatpak &>/dev/null; then
 	echo "'flatpak' could not be found"
 	exit
 fi
