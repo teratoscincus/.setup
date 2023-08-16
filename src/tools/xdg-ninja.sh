@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 if command -v xdg-ninja &>/dev/null; then
-	exit
+    exit
 fi
 
 repo_dest="$XDG_DATA_HOME"/xdg-ninja
 if [[ ! -d "$repo_dest" ]]; then
-	git clone git@github.com:b3nj5m1n/xdg-ninja.git "$repo_dest"
+    git clone git@github.com:b3nj5m1n/xdg-ninja.git "$repo_dest"
 fi
 
 # Place executable in $PATH

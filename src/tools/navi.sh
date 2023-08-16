@@ -4,7 +4,7 @@
 # https://github.com/denisidoro/navi
 
 if command -v navi &>/dev/null; then
-	exit
+    exit
 fi
 
 SRC_DEST=$XDG_DATA_HOME/navi

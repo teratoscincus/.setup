@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 if ! command -v flatpak &>/dev/null; then
-	echo "'flatpak' could not be found"
-	exit
+    echo "'flatpak' could not be found"
+    exit
 fi
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
