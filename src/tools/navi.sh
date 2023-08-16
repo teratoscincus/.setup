@@ -3,4 +3,13 @@
 # Command line cheatsheet
 # https://github.com/denisidoro/navi
 
-bash <(curl -sL https://raw.githubusercontent.com/denisidoro/navi/master/scripts/install)
+if command -v navi &>/dev/null; then
+	exit
+fi
+
+SRC_DEST=$XDG_DATA_HOME/navi
+git clone https://github.com/denisidoro/navi "$SRC_DEST"
+cd "$SRC_DEST"
+# Set the install directory:
+make BIN_DIR=/usr/local/bin install
+make install
