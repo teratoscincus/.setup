@@ -46,7 +46,7 @@ install_os_packages() {
     case "$OS" in
     'void')
         update() {
-            sudo xbps-install -Su
+            sudo xbps-install -Su xbps
             # XBPS must use a separate transaction to update itself. If your update
             # includes the `xbps` package, a second update is required to apply the rest
             # of the updates.
