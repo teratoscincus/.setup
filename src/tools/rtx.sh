@@ -21,6 +21,7 @@ GLOBALS_USED=(
 
 # Install only
 ENSURE_INSTALLED=(
+    python@3.9
     java@adoptopenjdk-8
     java@11
     java@17
