@@ -11,3 +11,12 @@ install the latest version when installing packages using the list in "packages.
 ```bash
 xpkg -m > packages.txt
 ```
+
+## Install all listed packages
+
+Possibly impossible to install some of the packages in the list using `xbps-install`.
+This could be since they were installed using the `void-packages`.
+
+```bash
+sudo xbps-install -Su $(cat packages.txt)
+```
