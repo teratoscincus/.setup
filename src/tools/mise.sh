@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 
 # Runtime executor
-# https://github.com/jdxcode/rtx
+# https://github.com/jdxcode/mise
 
 # Install and use globally
 GLOBALS_USED=(
     node@lts
     lua@latest
     luaJIT@latest
-    python@latest
     go@latest
     rust@stable
     java@lts
@@ -22,24 +21,27 @@ GLOBALS_USED=(
 # Install only
 ENSURE_INSTALLED=(
     python@3.9
+    python@3.10
+    python@3.11
+    python@latest
     java@adoptopenjdk-8
     java@11
     java@17
     java@latest
 )
 
-# Check that `rtx` is installed
-if ! command -v rtx &>/dev/null; then
-    echo "'rtx' could not be found"
+# Check that `mise` is installed
+if ! command -v mise &>/dev/null; then
+    echo "'mise' could not be found"
     exit 1
 fi
 
 # Install from above lists
 for tool in "${GLOBALS_USED[@]}"; do
-    rtx install "$tool"
-    rtx use -g "$tool"
+    mise install "$tool"
+    mise use -g "$tool"
 done
 
 for tool in "${ENSURE_INSTALLED[@]}"; do
-    rtx install "$tool"
+    mise install "$tool"
 done
